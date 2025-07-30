@@ -1,0 +1,77 @@
+body{
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.result {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.caption {
+  font-size: 20px;
+}
+.move {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.score {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.auto-play-button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.show-stop {
+  background-color: red;
+}
+.reset-score-button {
+  background-color: gray;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 8px 15px;
+  margin-right: 10px;
+}
+.show-reset {
+  background-color: white;
+  cursor: pointer;
+}
+.move-button {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 3px solid white;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.move-icon {
+  height: 50px;
+  background-color: rgb(25, 25, 25);
+}
+.yes-button, .no-button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.yes-button{
+  margin-left: 10px;
+}
