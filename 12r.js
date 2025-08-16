@@ -70,7 +70,7 @@
           if (isAutoPlaying) {
             stopAutoPlay();
           }
-          playGame('Rock');
+          playGame('rock');
           resetButtonPackage();
         });
 
@@ -80,7 +80,7 @@
           if (isAutoPlaying) {
             stopAutoPlay();
           }
-          playGame('Paper');
+          playGame('paper');
           resetButtonPackage();
         });
 
@@ -90,7 +90,7 @@
           if (isAutoPlaying) {
             stopAutoPlay();
           }
-          playGame('Scissors');
+          playGame('scissors');
           resetButtonPackage();
         });
       
@@ -104,28 +104,28 @@
         if(event.key === 'r' || event.key === 'R') {
           if (isAutoPlaying) {
             stopAutoPlay();
-            playGame('Rock');
+            playGame('rock');
             resetButtonPackage();
           } else {
-            playGame('Rock');
+            playGame('rock');
             resetButtonPackage();
           }
         } else if(event.key === 'p' || event.key === 'P') {
           if (isAutoPlaying) {
             stopAutoPlay();
-            playGame('Paper');
+            playGame('paper');
             resetButtonPackage();
           } else {
-            playGame('Paper');
+            playGame('paper');
             resetButtonPackage();
           }
         } else if(event.key === 's' || event.key === 'S') {
           if (isAutoPlaying) {
             stopAutoPlay();
-            playGame('Scissors');
+            playGame('scissors');
             resetButtonPackage();
           } else {
-            playGame('Scissors');
+            playGame('scissors');
             resetButtonPackage();
           } 
         } else if(event.key === 'a' || event.key === 'A') {
@@ -150,27 +150,27 @@
       function playGame(playerMove){
         const computerMove = pickComputerMove();
           
-        if(playerMove === 'Rock') {
-          if(computerMove === 'Rock') {
+        if(playerMove === 'rock') {
+          if(computerMove === 'rock') {
             result = 'Tie.'
-          } else if(computerMove === 'Paper'){
+          } else if(computerMove === 'paper'){
             result = 'You lose.'
           } else {
             result = 'You win.'
           }
-        } else if(playerMove === 'Paper'){
-            if(computerMove === 'Rock') {
+        } else if(playerMove === 'paper'){
+            if(computerMove === 'rock') {
               result = 'You win.'
-            } else if(computerMove === 'Paper'){
+            } else if(computerMove === 'paper'){
               result = 'Tie.'
             } else {
               result = 'You lose.'
             }
 
           } else{
-            if(computerMove === 'Rock') {
+            if(computerMove === 'rock') {
                 result = 'You lose.'
-              } else if(computerMove === 'Paper'){
+              } else if(computerMove === 'paper'){
                 result = 'You win.'
               } else {
                 result = 'Tie.'
@@ -204,11 +204,11 @@ Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
         let computerMove = '';
 
         if(randomNumber <= 1/3){
-          computerMove = 'Rock';
+          computerMove = 'rock';
         } else if(randomNumber <= 2/3) {
-          computerMove = 'Paper';
+          computerMove = 'paper';
         } else {
-          computerMove = 'Scissors';
+          computerMove = 'scissors';
         }
         return computerMove;
       }
