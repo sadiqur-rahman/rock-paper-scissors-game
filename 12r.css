@@ -54,14 +54,35 @@ body{
   background-color: white;
   cursor: pointer;
 }
+/* Move buttons in a row */
+.moves-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;       /* space between buttons */
+  flex-wrap: wrap; /* wrap nicely on mobile */
+  margin: 40px 0;
+}
+
 .move-button {
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
+  width: 120px;         /* same width */
+  height: 120px;        /* same height */
+  border-radius: 50%;   /* makes it a circle */
   border: 3px solid white;
   background-color: transparent;
-  margin-right: 10px;
+  margin: 10px;
   cursor: pointer;
+  display: flex;              /* center icon */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Control buttons in a row */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 .move-icon {
   height: 50px;
@@ -81,7 +102,7 @@ body{
   margin-left: 10px;
 }
 
-/* 📱 Mobile Styles */
+/* Mobile Styles */
 @media (max-width: 600px) {
   body {
     font-size: 18px;
