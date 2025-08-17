@@ -321,5 +321,5 @@ Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
       //Updates score into HTML
       function updateScoreElement() {
         document.querySelector('.js-score')
-          .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+          .innerHTML = `<p style="color:lightgreen">Wins: <b>${score.wins}</b></p> <p style="color:red">Losses: <b>${score.losses}</b></p> <p style="color:white">Ties: <b>${score.ties}</b></p>`;
       }
